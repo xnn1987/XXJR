@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="#f7f7f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="推荐咨询"
+        android:textColor="#9a9a9a"
+        android:textSize="15sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp">
+
+       <!-- <com.duoduo.wqg.smallfinicial.autoscrollviewpager.AutoScrollViewPager
+            android:scaleType="fitXY"
+            android:id="@+id/bussinessFM_vp_recomment"
+            android:layout_width="match_parent"
+            android:layout_height="151dp" />-->
+
+        <LinearLayout
+            android:scaleType="fitXY"
+            android:id="@+id/bussinessFM_ll_recomment"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="horizontal" />
+
+        <!--<TextView
+            android:id="@+id/bussinessFM_tv_recomment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#40000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="xxxxx"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

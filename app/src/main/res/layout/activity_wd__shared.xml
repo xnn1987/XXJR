@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_three_no_statusbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/wdshared_tv_sharedwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:onClick="onClickSharedWd"
+            android:text="分享微店"
+            android:clickable="true"
+            android:textColor="@color/origin_qianse"
+            android:textSize="@dimen/tv_bottomSp" />
+
+        <View
+            android:id="@+id/wdshared_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/wdshared_tv_sharedwd"
+            android:background="@color/origin_qianse"></View>
+
+        <com.xxjr.xxjr.custview.ProgressWebView
+            android:layout_above="@id/wdshared_line"
+            android:id="@+id/wdshared_wv_wdshared"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

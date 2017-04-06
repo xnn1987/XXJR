@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+    <View
+        android:layout_marginLeft="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:textColor="#9a9a9a"
+            android:textSize="9dp"
+            android:text="●"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#9a9a9a"
+            android:layout_marginRight="17dp"
+            android:text="客服提示"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#9a9a9a"
+            android:text="2015-12-31 19:26"
+            android:id="@+id/OrderFeedback_tv_time" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="13sp"
+        android:textColor="#61A34A"
+        android:lineSpacingExtra="5dp"
+        android:text="您好，您补充的申请材料正在审核中，请耐心等待"
+        android:id="@+id/OrderFeedback_tv_check" />
+
+</LinearLayout>

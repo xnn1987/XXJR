@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_three_view_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/TongXunLu_lv_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/Tongxunlu_tv_dialog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/voip_toast_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+
+        <com.xxjr.xxjr.tongxun.SidebarView
+            android:id="@+id/TongXunlu_sidebarView"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</LinearLayout>

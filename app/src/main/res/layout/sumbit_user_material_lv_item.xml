@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/SumbitUserMateria_rl_Prove"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp">
+
+        <ImageView
+            android:id="@+id/SumbitUserMaterial_iv_Prove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/hongxing" />
+
+        <TextView
+            android:id="@+id/SumbitUserMaterial_tv_ElseProve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/SumbitUserMaterial_iv_Prove"
+            android:text="身份证件"
+            android:textColor="#5d5d5d"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/SumbitUserMaterial_iv_Uploading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/back_arrow" />
+
+        <TextView
+            android:id="@+id/SumbitUserMaterial_tv_ElseUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/SumbitUserMaterial_iv_Uploading"
+            android:text="未上传"
+            android:textColor="#cfcfcf"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+</LinearLayout>

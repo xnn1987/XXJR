@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="152dp"
+    android:background="#30000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/click_trasparent_selector"
+        android:id="@+id/MyCustomPupop_ll_alter"
+        android:gravity="center_vertical"
+        android:layout_width="152dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/xiugai_2x"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+
+    <LinearLayout
+        android:background="@drawable/click_trasparent_selector"
+        android:id="@+id/MyCustomPupop_ll_startfrient"
+        android:gravity="center_vertical"
+        android:layout_width="152dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/MyCustomPupop_iv_startfrient"
+            android:layout_marginLeft="16dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/baixing"/>
+
+        <TextView
+            android:id="@+id/MyCustomPupop_tv_startfrient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为星际朋友"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+
+    <LinearLayout
+        android:background="@drawable/click_trasparent_selector"
+        android:id="@+id/MyCustomPupop_ll_delect"
+        android:gravity="center_vertical"
+        android:layout_width="152dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/erweima_2x"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

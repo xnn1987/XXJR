@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_three_view_titlebar"/>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f7f7f7"
+        android:gravity="center_vertical"
+        android:text="请输入贷款客户信息"
+        android:textColor="#9a9a9a"
+        android:textSize="12sp" />-->
+
+    <RelativeLayout
+        android:id="@+id/SalaryOrder_Rl_city"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp">
+
+        <TextView
+            android:id="@+id/SalaryOrder_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:text="所在城市"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/SalaryOrder_tv_cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/SalaryOrder_city"
+            android:text="深圳"
+            android:textColor="#9a9a9a"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:src="@mipmap/back_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="22dp"
+        android:background="#dedfe0" />
+
+    <RelativeLayout
+        android:id="@+id/SalaryOrder_Rl_ChoiceProduce"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp">
+
+        <TextView
+            android:id="@+id/SalaryOrder_ChoiceProduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:text="产品名称"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/SalaryOrder_tv_ChoiceProduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/SalaryOrder_ChoiceProduce"
+            android:text="请选择产品"
+            android:textColor="#9a9a9a"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/SalaryOrder_iv_ChoiceProduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:src="@mipmap/back_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:text="客户姓名"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/SalaryOrder_edt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入客户真实姓名"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#9a9a9a"
+            android:textColorHint="#cfcfcf"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="#dedfe0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:text="身份证号"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/SalaryOrder_edt_IDCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入客户身份证证件号码"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColor="#9a9a9a"
+            android:textColorHint="#cfcfcf"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="#dedfe0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:text="手机号码"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/SalaryOrder_edt_Tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入常用手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="#9a9a9a"
+            android:textColorHint="#cfcfcf"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="#dedfe0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:text="贷款金额"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/SalaryOrder_edt_MoneySum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@null"
+            android:hint="1.00-50.00"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:textColor="#9a9a9a"
+            android:textColorHint="#cfcfcf"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="万"
+            android:textColor="#9a9a9a"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <Button
+        android:id="@+id/SalaryOrder_btn_Commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/btn_shape_coners_orange"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_Sp" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="若只填写简单信息简单返点"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#fc6923"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="#fc6923"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="完整提交材料交单返点"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#fc6923"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="#fc6923"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="简单提交后可继续完整交单"
+        android:textColor="#9a9a9a"
+        android:textSize="13sp" />-->
+
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="162dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="162dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="#f4f6f5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/popwind_card_ll_load"
+                android:background="@drawable/main_pop_ll_selector"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <ImageView
+                    android:id="@+id/popwind_card_iv_load"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/main_pop_iv_load"/>
+                <TextView
+                    android:id="@+id/popwind_card_tv_load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="贷款"
+                    android:textColor="@color/main_pop_tv_color"
+                    android:textSize="@dimen/world_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popwind_card_ll_licai"
+                android:background="@drawable/main_pop_ll_selector"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <ImageView
+                    android:id="@+id/popwind_card_iv_licai"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/main_pop_iv_licai"/>
+                <TextView
+                    android:id="@+id/popwind_card_tv_licai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="理财"
+                    android:textColor="@color/main_pop_tv_color"
+                    android:textSize="@dimen/world_14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popwind_card_ll_insure"
+                android:background="@drawable/main_pop_ll_selector"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <ImageView
+                    android:id="@+id/popwind_card_iv_insure"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/main_pop_iv_insure"/>
+                <TextView
+                    android:id="@+id/popwind_card_tv_insure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="保险"
+                    android:textColor="@color/main_pop_tv_color"
+                    android:textSize="@dimen/world_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popwind_card_ll_landed"
+                android:background="@drawable/main_pop_ll_selector"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <ImageView
+                    android:id="@+id/popwind_card_iv_landed"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/main_pop_iv_landed"/>
+                <TextView
+                    android:id="@+id/popwind_card_tv_landed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="地产"
+                    android:textColor="@color/main_pop_tv_color"
+                    android:textSize="@dimen/world_14sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="#f6f6f6"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginLeft="@dimen/common_margin_10"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#f4f6f5"/>
+
+            <TextView
+                android:id="@+id/popwind_card_tv_all"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/main_pop_tv_color"
+                android:textSize="@dimen/world_14sp" />
+
+            <TextView
+                android:id="@+id/popwind_card_tv_taday"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="今天"
+                android:textColor="@color/main_pop_tv_color"
+                android:textSize="@dimen/world_14sp" />
+
+
+            <TextView
+                android:id="@+id/popwind_card_tv_threeDay"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="三天内"
+                android:textColor="@color/main_pop_tv_color"
+                android:textSize="@dimen/world_14sp" />
+
+
+            <TextView
+                android:id="@+id/popwind_card_tv_weekday"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="一周内"
+                android:textColor="@color/main_pop_tv_color"
+                android:textSize="@dimen/world_14sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

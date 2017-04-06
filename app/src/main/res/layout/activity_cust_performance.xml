@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11dp"
+                android:text="累计佣金"
+                android:textColor="#f00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(已返佣金+收徒佣金)"
+                android:textColor="#9a9a9a"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="¥"
+                android:textColor="#fc6923"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cust_summary_allReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#fc6923"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="30dp"
+        android:background="#dedfe0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <RelativeLayout
+        android:id="@+id/CustPerfomance_rl_Residue"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp">
+
+
+        <TextView
+            android:id="@+id/CustPerfomance_tv_Residue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="剩余佣金："
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/CustPerforman_tv_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:text="提现"
+            android:textSize="14sp"
+            android:textColor="#fc6923" />
+
+        <TextView
+            android:id="@+id/cust_summary_useableamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/CustPerforman_tv_withdraw"
+            android:text="0"
+            android:textColor="#9a9a9a"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+    <RelativeLayout
+        android:id="@+id/CustPerfomance_rl_Return"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp"
+        >
+
+
+        <TextView
+            android:id="@+id/CustPerfomance_tv_Return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已返佣金："
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/CustPerforman_iv_returnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_arrow" />
+
+        <TextView
+            android:id="@+id/cust_summary_myReward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/CustPerforman_iv_returnGo"
+            android:text="¥0"
+            android:textColor="#9a9a9a"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <RelativeLayout
+        android:id="@+id/CustPerfomance_rl_prentice"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp">
+
+
+        <TextView
+            android:id="@+id/CustPerfomance_tv_prentice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="收徒佣金："
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/CustPerfomance_iv_prenticeGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_arrow" />
+
+        <TextView
+            android:id="@+id/cust_summary_parentReward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/CustPerfomance_iv_prenticeGo"
+            android:text="¥0"
+            android:textColor="#9a9a9a"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="30dp"
+        android:background="#dedfe0" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <RelativeLayout
+        android:id="@+id/CustPerfomance_rl_withdrawDetail"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="提现明细"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/CustPerfomance_iv_withdrawDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_arrow"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="30dp"
+        android:background="#dedfe0" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <RelativeLayout
+        android:id="@+id/CustPerfomance_rl_connact"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/click_white_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp">
+
+
+        <TextView
+            android:id="@+id/CustPerfomance_tv_connact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系电话："
+            android:textColor="#fc6923"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/CustPerfomance_tv_connact"
+            android:text="400-189-2600"
+            android:textColor="#fc6923"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/CustPerfomance_iv_connactGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_arrow" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+</LinearLayout>

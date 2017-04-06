@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="若要修改手机，请先输入您的登录密码，以验证身份"
+            android:textColor="#9a9a9a"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录密码"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:id="@+id/cust_login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的登录密码"
+            android:textColorHint="#cfcfcf"
+            android:layout_marginLeft="22dp"
+            android:textSize="14sp"
+            android:textColor="#9a9a9a"
+            android:inputType="textPassword"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <Button
+        android:id="@+id/cust_login_pwd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/btn_shape_coners_tint_orange"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_Sp" />
+</LinearLayout>

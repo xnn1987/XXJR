@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    >
+
+    <include layout="@layout/title_only_backicon_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_margin="6dp"
+                android:id="@+id/OrderFlow_iv_orgStatus01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dian_2x"
+                />
+            <View
+                android:id="@+id/OrderFlow_view_orgStatus01"
+
+                android:layout_width="0.5dp"
+                android:layout_height="54dp"
+                android:background="#dedfe0"/>
+            <ImageView
+                android:layout_margin="6dp"
+                android:id="@+id/OrderFlow_iv_orgStatus02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dian_2x"
+                />
+            <View
+                android:id="@+id/OrderFlow_view_orgStatus02"
+
+                android:layout_width="0.5dp"
+                android:layout_height="54dp"
+                android:background="#dedfe0"/>
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:id="@+id/OrderFlow_iv_orgStatus03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dian_2x"
+                />
+            <View
+                android:id="@+id/OrderFlow_view_orgStatus03"
+
+                android:layout_width="0.5dp"
+                android:layout_height="54dp"
+                android:background="#dedfe0"/>
+            <ImageView
+                android:layout_margin="6dp"
+                android:id="@+id/OrderFlow_iv_orgStatus04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dian_2x"
+                />
+            <View
+                android:id="@+id/OrderFlow_view_orgStatus04"
+
+                android:layout_width="0.5dp"
+                android:layout_height="54dp"
+                android:background="#dedfe0"/>
+            <ImageView
+                android:layout_margin="6dp"
+                android:id="@+id/OrderFlow_iv_orgStatus05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dian_2x"
+                />
+            <View
+                android:id="@+id/OrderFlow_view_orgStatus05"
+
+                android:layout_width="0.5dp"
+                android:layout_height="54dp"
+                android:background="#dedfe0"/>
+
+            <ImageView
+                android:layout_margin="6dp"
+                android:id="@+id/OrderFlow_iv_orgStatus06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dian_2x"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交申请材料"
+                    android:paddingBottom="9dp"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户向该申请机构提供完整材料"
+                    android:textColor="#9a9a9a"
+                    android:textSize="11sp"
+                   />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedfe0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机构审核"
+                    android:paddingBottom="9dp"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机构审核人员初审"
+                    android:textColor="#9a9a9a"
+                    android:textSize="11sp" />
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedfe0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机构批款"
+                    android:paddingBottom="9dp"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申请材料初审后，机构将进行放款审批"
+                    android:textColor="#9a9a9a"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedfe0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="9dp"
+                    android:text="客户签约"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机构批款后，需客户上门签约"
+                    android:textColor="#9a9a9a"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedfe0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="9dp"
+                    android:text="客户领款"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户成功领取贷款后，您将收到所得佣金"
+                    android:textColor="#9a9a9a"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedfe0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="9dp"
+                    android:text="支付佣金"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户成功领款，根据放款金额和返点，向您支付所得佣金"
+                    android:textColor="#9a9a9a"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedfe0" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

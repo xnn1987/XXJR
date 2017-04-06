@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/click_white_selector"
+        android:id="@+id/ChoiceConstance_ll_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="44dp">
+
+
+        <TextView
+            android:id="@+id/choiceConstance_realname"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingLeft="11dp"
+            android:textColor="#000000"
+            />
+        <com.xxjr.xxjr.custview.CustViewGroup
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/choiceConstance_realname"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/choiceConstance_concat_tag"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/choiceConstance_ll_image"
+            android:layout_alignParentRight="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/choiceConstance_iv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yi1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/ChoiceConstance_ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dedfe0"/>
+
+</RelativeLayout>

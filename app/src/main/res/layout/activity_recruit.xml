@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recruit_main"
+    android:background="#f7f7f7">
+
+    <LinearLayout
+        android:id="@+id/Recruit_Ll_makeMoney"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#fc6923"/>
+        <TextView
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="收徒赚佣金"
+            android:textColor="#fc6923"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/Recruit_Ll_makeMoney"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7f7f7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:background="@mipmap/beijing"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="167dp"
+                android:layout_height="168dp"
+                android:background="@mipmap/yuanquan"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Recruit_tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0.00"
+                        android:textColor="@android:color/white"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="累计收徒佣金(元)"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/Recruit_Rl_MyRecruit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/Recruit_iv_MyRecruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:src="@mipmap/back_arrow" />
+
+            <TextView
+                android:id="@+id/Recruit_tv_MyRecruitCoutn"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_toLeftOf="@id/Recruit_iv_MyRecruit"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="0"
+                android:textColor="#fc6923"
+                android:textSize="15sp" />
+
+            <TextView
+                android:background="@drawable/click_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="我的学徒"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dedfe0" />
+
+        <RelativeLayout
+            android:id="@+id/Recruit_Rl_RecruitMore"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/Recruit_iv_RecruitMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:src="@mipmap/back_arrow" />
+
+            <TextView
+                android:background="@drawable/click_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="为什么要收徒"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dedfe0" />
+
+        <RelativeLayout
+            android:id="@+id/Recruit_Rl_WhyRecruit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/Recruit_iv_WhyRecruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:src="@mipmap/back_arrow" />
+
+            <TextView
+                android:background="@drawable/click_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="如何收取更多徒弟"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dedfe0" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/construce_ll_main"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_three_view_titlebar"/>
+
+    <com.xxjr.xxjr.custview.ProgressWebView
+        android:id="@+id/bussinessConstruce_wv_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+   <include layout="@layout/title_only_backicon_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/zhengx"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人征信"
+        android:layout_marginTop="22dp"
+        android:textSize="12sp"
+        android:textColor="#6f6f6f"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:onClick="onClickZxFirst"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="首次开通央行征信查询"
+        android:background="@drawable/zx_oragin_shape"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_Sp"/>
+    <Button
+        android:onClick="onClickZxLogin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已有账号"
+        android:background="@drawable/zx_white_shape"
+        android:textColor="#e97439"
+        android:textSize="@dimen/button_Sp"/>
+</LinearLayout>

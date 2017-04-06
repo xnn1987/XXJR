@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#f7f7f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kefu_tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="时间"
+            android:textColor="#9a9a9a"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+
+            android:gravity="center_vertical"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="10sp"
+                    android:id="@+id/kefu_tv_state"
+                    android:text="●"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#fc6923"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/kefu_tv_borrowName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="谁谁谁贷款了"
+                    android:textSize="13sp"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kefu_tv_borrowMsg"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="谁谁谁贷款了"
+                android:textSize="13sp"
+                android:textColor="#9a9a9a" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#dedfe0"
+            android:layout_marginLeft="11dp"/>
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            >
+            <Button
+                android:id="@+id/kefu_btn_chat"
+                android:background="@drawable/btn_shape_coners_orange"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:layout_width="88dp"
+                android:layout_height="28dp"
+                android:text="联系客服"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

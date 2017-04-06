@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bestseller_rl_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/bestseller_iv_sharedicon"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fenxianbaner"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="申请人数"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bestseller_tv_shared"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/bestseller_rl_shared"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:paddingLeft="20dp"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:id="@+id/bestseller_lv_seller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/CustOrder_iv_checkIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/wujilu"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bestseller_iv_paihang"
+        android:layout_marginTop="130dp"
+        android:layout_width="60dp"
+        android:scaleType="fitXY"
+        android:layout_height="60dp"
+        android:src="@mipmap/paihangbang"/>
+
+</RelativeLayout>

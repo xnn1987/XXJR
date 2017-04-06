@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_selected_bg">#C4E1E1</color>
+    <!--<color name="blue">#ff33b5e5</color>-->
+    <color name="title_color">#ffffff</color>
+    <color name="origin_qianse">#f98f69</color>
+    <color name="origin_tint">#f9ad92</color>
+    <color name="backgroud_f7f7f7">#f7f7f7</color>
+    <color name="line_gray">#dedfe0</color>
+    <color name="word_gray_9a9a9a">#9a9a9a</color>
+    <color name="hint_gray">#cfcfcf</color>
+    <color name="word_gray_a2a2a2">#a2a2a2</color>
+    <color name="word_black_333333">#333333</color>
+    <color name="word_blue_5db0eb">#5db0eb</color>
+    <color name="word_hite">#cccccc</color>
+
+
+
+    <color name="tabColor">#dedfe0</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+    <color name="zhexiantu_fill_green">#93dfe0</color>
+    <color name="zhexiantu_line_green">#2ec7c9</color>
+    <color name="wdproduce_blue_text">#5db0eb</color>
+
+    <color name="ceshi">#FFBBBBBB</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <!-- 提示框的背景色 -->
+    <color name="background_color_black">#bb000000</color>
+    <color name="dialog_homegengduo">#eadfd9</color>
+    <color name="dialog_background">#f9f8f7</color>
+
+    <!--搜索框背景-->
+    <color name="searchLayout_background">#f8f6f7</color>
+    <!--标签颜色-->
+    <color name="tag_check">#f98f69</color>
+    <color name="tag_no_check">#aaabab</color>
+    <color name="tag_nocheck_fill_color">#f7f7f7</color>
+    <color name="tag_check_fill_color">#ffffff</color>
+
+
+
+
+</resources>
+

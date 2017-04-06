@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_f7f7f7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#a0a4aa"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报告编号: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/world_12sp" />
+
+            <TextView
+                android:id="@+id/creditdel_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/world_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="@dimen/common_margin_20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:textColor="@color/word_black_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/creditdel_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="@color/word_black_333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您有 "
+                    android:textColor="#4c4c4c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/creditdel_tv_countYq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#ff6818"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="条逾期"
+                    android:textColor="#ff6818"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 记录"
+                    android:textColor="#4c4c4c"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报告日期:  "
+                    android:textColor="#4c4c4c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/creditdel_tv_createTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="shijian"
+                    android:textColor="#4c4c4c"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:src="@mipmap/laba" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车贷、房贷怕逾期，"
+                android:textColor="#4c4c4c"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加提醒>>"
+                android:textColor="#41c030"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="@dimen/common_margin_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:src="@mipmap/xinykjl" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="信用卡记录"
+                android:textColor="@color/word_black_333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:background="@color/line_gray" />
+
+        <com.xxjr.xxjr.custview.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_xykzhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未销户"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_xykwxh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="逾期数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_xykyqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="担保数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_xykdbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+        </com.xxjr.xxjr.custview.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="@dimen/common_margin_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:src="@mipmap/daikjl" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="购房贷款记录"
+                android:textColor="@color/word_black_333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:background="@color/line_gray" />
+
+        <com.xxjr.xxjr.custview.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_dkjlzhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未销户"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_dkjlwxh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="逾期数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_dkjlyqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="担保数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_dkjldbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+        </com.xxjr.xxjr.custview.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="@dimen/common_margin_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:src="@mipmap/qtdk" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="其他贷款记录"
+                android:textColor="@color/word_black_333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:background="@color/line_gray" />
+
+        <com.xxjr.xxjr.custview.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_qtdkzhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未销户"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_qtdkwxh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="逾期数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_qtdkyqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="担保数"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_qtdkdbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+        </com.xxjr.xxjr.custview.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="@dimen/common_margin_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:src="@mipmap/gonggjl" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="公共记录"
+                android:textColor="@color/word_black_333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:background="@color/line_gray" />
+
+        <com.xxjr.xxjr.custview.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="欠税记\n录"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_ggjlzhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="民事判\n断记录"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_ggjlwxh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="强制执\n行记录"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_ggjlyqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="强制执\n行记录"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_ggjlxz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="25%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电信欠\n费记录"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_ggjldbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+        </com.xxjr.xxjr.custview.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="@dimen/common_margin_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:src="@mipmap/chaxjl" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查询记录"
+                android:textColor="@color/word_black_333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:background="@color/line_gray" />
+
+        <com.xxjr.xxjr.custview.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信用卡\n审批"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_cxjlzhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贷后管\n理"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_cxjlwxh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人查\n询"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_cxjlgrcx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贷款审\n批"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_cxjlyqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="担保资\n格审查"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+
+                <TextView
+                    android:id="@+id/creditDel_tv_cxjldbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+        </com.xxjr.xxjr.custview.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+</ScrollView>

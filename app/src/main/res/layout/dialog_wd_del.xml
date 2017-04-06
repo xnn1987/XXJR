@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="280dp"
+        android:layout_height="136dp"
+        android:background="@drawable/dialog_layout_shape">
+
+        <TextView
+            android:id="@+id/dialog_del_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定要删除该"
+            android:textColor="#262425"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/dialog_bottomlayout_shape"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/dialog_del_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="确定"
+                android:gravity="center"
+                android:textColor="#616060"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray"/>
+            <TextView
+                android:id="@+id/dialog_del_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="取消"
+                android:gravity="center"
+                android:textColor="#616060"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

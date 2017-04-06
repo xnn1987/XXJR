@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_f7f7f7"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_no_statusbar" />
+
+    <ScrollView
+        android:id="@+id/qiye_sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/line_gray" />
+
+            <RelativeLayout
+                android:id="@+id/qiye_rl_qiyetype"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp">
+
+                <ImageView
+                    android:id="@+id/qiye_iv_zhiye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/back_arrow" />
+
+                <TextView
+                    android:id="@+id/qiye_tv_qiyetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/qiye_iv_zhiye"
+                    android:text="请选择"
+                    android:textColor="@color/word_gray_9a9a9a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="企业类型"
+                    android:textColor="@color/word_black_333333"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:background="@color/line_gray" />
+
+            <RelativeLayout
+                android:id="@+id/qiye_rl_danbaoway"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp">
+
+                <ImageView
+                    android:id="@+id/qiye_iv_xinyong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/back_arrow" />
+
+                <TextView
+                    android:id="@+id/qiye_tv_danbao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/qiye_iv_xinyong"
+                    android:text="请选择"
+                    android:textColor="@color/word_gray_9a9a9a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="担保方式"
+                    android:textColor="@color/word_black_333333"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="13dp"
+                android:background="@color/line_gray" />
+
+            <RelativeLayout
+                android:id="@+id/qiye_rl_wufafangkuanhangye"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp">
+
+                <ImageView
+                    android:id="@+id/qiye_iv_daikuanfangshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/back_arrow" />
+
+                <TextView
+                    android:id="@+id/qiye_tv_wufafangkuanhangye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/qiye_iv_daikuanfangshi"
+                    android:text="无"
+                    android:textColor="@color/word_gray_9a9a9a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="无法放款行业"
+                    android:textColor="@color/word_black_333333"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="13dp"
+                        android:text="每月对公流水要求："
+                        android:textColor="@color/word_black_333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/qiye_tv_duigongliushui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/wdproduce_blue_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.xxjr.xxjr.other.seekbar.MaterialRangeSlider
+                    android:id="@+id/qiye_sb_duigongliushui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="6dp"
+                    android:minHeight="45dp"
+                    app:insideRangeLineColor="@color/origin_qianse"
+                    app:insideRangeLineStrokeWidth="2dp"
+                    app:isSingleCircle="true"
+                    app:outsideRangeLineColor="@color/backgroud_f7f7f7"
+                    app:outsideRangeLineStrokeWidth="2dp"
+                    app:pressedTargetRadius="12dp"
+                    app:targetColor="@color/origin_qianse"
+                    app:unpressedTargetRadius="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="13dp"
+                        android:text="每月对私流水要求："
+                        android:textColor="@color/word_black_333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/qiye_tv_duisiliushui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/wdproduce_blue_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.xxjr.xxjr.other.seekbar.MaterialRangeSlider
+                    android:id="@+id/qiye_sb_duisiliushui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="6dp"
+                    android:minHeight="45dp"
+                    app:insideRangeLineColor="@color/origin_qianse"
+                    app:insideRangeLineStrokeWidth="2dp"
+                    app:isSingleCircle="true"
+                    app:outsideRangeLineColor="@color/backgroud_f7f7f7"
+                    app:outsideRangeLineStrokeWidth="2dp"
+                    app:pressedTargetRadius="12dp"
+                    app:targetColor="@color/origin_qianse"
+                    app:unpressedTargetRadius="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="13dp"
+                        android:text="营业时长要求："
+                        android:textColor="@color/word_black_333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/qiye_tv_yingyeshichang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/wdproduce_blue_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.xxjr.xxjr.other.seekbar.MaterialRangeSlider
+                    android:id="@+id/qiye_sb_yingyeshichang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="6dp"
+                    android:minHeight="45dp"
+                    app:insideRangeLineColor="@color/origin_qianse"
+                    app:insideRangeLineStrokeWidth="2dp"
+                    app:isSingleCircle="true"
+                    app:outsideRangeLineColor="@color/backgroud_f7f7f7"
+                    app:outsideRangeLineStrokeWidth="2dp"
+                    app:pressedTargetRadius="12dp"
+                    app:targetColor="@color/origin_qianse"
+                    app:unpressedTargetRadius="4dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="13dp">
+
+                <EditText
+                    android:gravity="left|top"
+                    android:id="@+id/qiye_et_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入产品描述\n示例\n1、具有营业执照、经营许可证以及有按时偿还贷款本息的能力;\n2、要有明确的贷款用途，且贷款用途符合相关规定;\n3、资信良好，遵纪守法，无不良信用及债务纪录;"
+                    android:textColor="@color/word_black_333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/qiye_btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_shape_coners_orange"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

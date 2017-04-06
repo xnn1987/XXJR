@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <com.xxjr.xxjr.custview.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_qutu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/qutu_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="展业趣图"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_weidian"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/weidian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="金融微店"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/chaxun_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="信贷工具"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_RobOrder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/qiangdan_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="签到抢单"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </com.xxjr.xxjr.custview.PercentLinearLayout>
+
+    <com.xxjr.xxjr.custview.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_mingpian"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mingpian_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="个人征信"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_calculator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/jisuanqi_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="计算器"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_cheats"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/miji_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="武功秘籍"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/HomeComprehensive_ll_more"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gengduo_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="更多"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </com.xxjr.xxjr.custview.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+</LinearLayout>

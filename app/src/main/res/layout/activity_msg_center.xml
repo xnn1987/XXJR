@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_only_backicon_title"/>
+    
+    <LinearLayout
+        android:background="@drawable/click_white_selector"
+        android:id="@+id/MsgNotify_ll_kefu"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/MsgNotify_iv_kefu"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/kefutongzhi"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服通知"/>
+
+            <TextView
+                android:id="@+id/MsgNotify_tv_kefu"
+                android:textColor="#9a9a9a"
+                android:text="查看您与客服的最新沟通记录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:background="@drawable/click_white_selector"
+        android:id="@+id/MsgNotify_ll_jiaodan"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/MsgNotify_iv_jiaodan"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/jiaodantongzhi"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交单通知"/>
+
+            <TextView
+                android:id="@+id/MsgNotify_tv_jiaodan"
+                android:textColor="#9a9a9a"
+                android:text="您的交单有新进展"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:background="@drawable/click_white_selector"
+        android:id="@+id/MsgNotify_llxitong"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/MsgNotify_iv_xitong"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/xitongtongzhi"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统通知"/>
+
+            <TextView
+                android:id="@+id/MsgNotify_tv_xitong"
+                android:textColor="#9a9a9a"
+                android:text="查看系统最新通知"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+
+</LinearLayout>

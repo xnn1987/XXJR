@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="11dp"
+        android:paddingTop="31dp"
+        android:text="个人描述"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/cust_custDesc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/shape_coners_line_black"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:hint="请输入您的个人描述"
+        android:inputType="textMultiLine"
+        android:maxLines="7"
+        android:paddingBottom="15dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="15dp"
+        android:textColor="#9a9a9a"
+        android:textColorHint="#cfcfcf"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/cust_custDesc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/btn_shape_coners_tint_orange"
+        android:text="保存"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+</LinearLayout>

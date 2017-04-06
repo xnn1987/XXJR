@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Concat_my_cust_head"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/concat_my_cust_head_new_cust"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_white_selector">
+
+        <ImageView
+            android:id="@+id/ConctMyCust_iv_newUserIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/mycust_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ConctMyCust_iv_newUserIcon"
+            android:text="我的新客户"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <RelativeLayout
+        android:id="@+id/concat_my_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_white_selector">
+
+        <ImageView
+            android:id="@+id/ConctMyCust_iv_MyTagIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/mytag_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ConctMyCust_iv_MyTagIcon"
+            android:text="我的标签"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <RelativeLayout
+        android:id="@+id/ConcatMyCust_rl_starfriend"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/ConctMyCust_iv_starfriendIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/mystat_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ConctMyCust_iv_starfriendIcon"
+            android:text="星标客户"
+            android:textColor="#9a9a9a"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <com.xxjr.xxjr.custview.CustListview
+        android:id="@+id/my_all_cust_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+
+    <RelativeLayout
+        android:id="@+id/ConcatMyCust_rl_commonfriend"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="#f7f7f7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="所有客户"
+            android:textColor="#9a9a9a"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户姓名："
+                android:textColor="#9a9a9a"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/QueryResult_tv_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试姓名"
+                android:textColor="#9a9a9a"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/QueryResult_tv_IDNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号："
+                android:textColor="#9a9a9a"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/QueryResult_tv_ID"
+                android:layout_toRightOf="@id/QueryResult_tv_IDNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000000000000000"
+                android:textColor="#9a9a9a"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/QueryResult_tv_time"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:32"
+                android:layout_marginRight="11dp"
+                android:textColor="#9a9a9a"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <com.xxjr.xxjr.custview.CustListview
+        android:id="@+id/QueryResult_lv_result2"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>-->
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_three_view_titlebar"/>
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:id="@+id/cust_sex_view_male"
+        android:layout_width="fill_parent"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:gravity="center_vertical"
+        android:layout_height="44dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:layout_centerVertical="true"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:id="@+id/cust_sex_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yi"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <RelativeLayout
+        android:id="@+id/cust_sex_view_female"
+        android:layout_width="fill_parent"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:gravity="center_vertical"
+        android:layout_height="44dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:layout_centerVertical="true"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:id="@+id/cust_sex_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yi"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+</LinearLayout>

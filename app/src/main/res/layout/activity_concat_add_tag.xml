@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/title_three_view_titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="标签名字"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <EditText
+            android:id="@+id/ConcatAddTag_et_tagname"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textSize="14sp"
+            android:hint="请输入标签名字"
+            android:textColor="#333333"
+            android:layout_marginLeft="11dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="标签成员"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:paddingLeft="15dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:background="@drawable/click_white_selector"
+            android:id="@+id/concat_add_concat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_add_2"
+            />
+        <ImageView
+            android:background="@drawable/click_white_selector"
+            android:id="@+id/concat_delect_concat"
+            android:layout_marginLeft="15dp"
+            android:layout_width="45dp"
+            android:scaleType="fitXY"
+            android:layout_height="45dp"
+            android:src="@mipmap/icon_delete_2"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <ListView
+        android:id="@+id/ConcatAddTag_lv_concat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

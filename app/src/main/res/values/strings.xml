@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">小小金融</string>
+    <string name="not_network">主人 没网了，请检查网络</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cancel">取消</string>
+    <string name="publish_empty_text">想说什么…</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_from_local">从相册中选取</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="p2refresh_head_load_more">加载中...</string>
+    <string name="p2refresh_end_load_more">更   多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="nothing_datas">没有更多数据</string>
+    <string name="Loading_Show">正在加载,请稍等</string>
+    <string name="Loading_ERROR">网络不稳定</string>
+    <string name="new_message">有新消息提示</string>
+    <string name="no_new_message">暂无新消息</string>
+    <string name="listfooterview_normal">查看更多</string>
+    <string name="listfooterview_ready">松开载入更多</string>
+    <string name="umeng_socialize_text_waitting">请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin_circle">跳转朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qzone">跳转QZone中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_redirect">跳转</string>
+    <string name="umeng_socialize_text_waitting_share">分享中..</string>
+    <string name="umeng_socialize_share">分享...</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="pull_to_refresh_pull_label1" translatable="false">向下拉动可以刷新</string>
+    <string name="pull_to_refresh_release_label1" translatable="false">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label1" translatable="false">加载中&#8230;</string>
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <string name="xlistview_footer_pull">上拉加载更多</string>
+    <string name="ceshi">测试</string>
+</resources>

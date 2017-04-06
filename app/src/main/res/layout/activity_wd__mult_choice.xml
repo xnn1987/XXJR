@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/backgroud_f7f7f7"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_three_view_titlebar"/>
+    <!--<com.xxjr.xxjr.other.FlowTagLayout.FlowTagLayout
+        android:background="@color/white"
+        android:id="@+id/mult_choice_ft_flowtag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xxjr.xxjr.other.tagcheckbox.TagCloudLayout
+            android:id="@+id/mult_choice_ft_flowtag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/mult_choice_ll_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="13dp">
+
+        <EditText
+            android:id="@+id/mult_et_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="其他选项(请以逗号','分隔)"
+            android:textColor="@color/word_gray_9a9a9a"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

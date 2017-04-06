@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:imageCoverFlow="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_three_no_statusbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:alpha="0.5"
+            android:id="@+id/wdchangModule_iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <com.xxjr.xxjr.other.wdSharedModule.CoverFlowView
+            android:id="@+id/wdchangModule_iv_coverflow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            imageCoverFlow:coverflowGravity="center_vertical"
+            imageCoverFlow:coverflowLayoutMode="wrap_content"
+
+            imageCoverFlow:reflectionGap="10dp"
+            imageCoverFlow:reflectionHeight="30%"
+            imageCoverFlow:visibleImage="3" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/series_ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:onClick="onClickSavaPic"
+                android:id="@+id/series_ll_savePic"
+                android:background="@drawable/click_white_selector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/baoc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"
+                    android:textColor="#24d29c"
+                    android:textSize="@dimen/world_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/series_bottomline"
+            android:layout_above="@id/series_ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_gray"/>
+
+        <ScrollView
+            android:layout_above="@id/series_bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/picSeries_ll_pic">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_width_60"
+                        android:orientation="horizontal"
+                        android:background="#fffdde">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/tishi"/>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/common_margin_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="长按图片可以保存到手机喔"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

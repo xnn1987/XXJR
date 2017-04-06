@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="180dp"
+    android:background="@drawable/layout_shape_coners"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未实名"
+        android:textSize="18sp"
+        android:textColor="#202020"/>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2d2d2d"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="10dp"
+        android:textSize="16sp"
+        android:text="未实名不可以提交产品订单，请您先实名在继续"/>
+
+
+
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="去实名"
+            android:textSize="18sp"
+            android:background="@null"
+            android:id="@+id/SalaryOrderDialog_btn_RealName"
+            android:textColor="#63abf4"/>
+        <!--<View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#dedfe0"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="继续提交"
+            android:textSize="18sp"
+            android:background="@null"
+            android:textColor="#63abf4"
+            android:id="@+id/SalaryOrderDialog_btn_commit" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

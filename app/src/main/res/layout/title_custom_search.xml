@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/title_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/click_trasparent_selector"
+            android:id="@+id/Custom_ll_back"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fanhui" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/CustomSearch_tv_deny"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingRight="6dp"
+            android:text="取消"
+            android:textSize="12sp"
+            android:textColor="@color/word_black_333333" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/CustomSearch_tv_deny"
+            android:background="@drawable/layout_shape_coners_fill_white"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/fangdajinghui" />
+
+            <EditText
+                android:id="@+id/ChoiceProduce_et_produceName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:hint="搜索"
+                android:textColor="@color/word_black_333333"
+                android:textColorHint="#cfcfcf"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f7f7f7" />
+
+</LinearLayout>

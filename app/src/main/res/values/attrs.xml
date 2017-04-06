@@ -1,0 +1,98 @@
+
+<resources>
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean"/>
+        <attr name="layout_horizontalSpacing" format="dimension"/>
+        <attr name="layout_verticalSpacing" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagCloudLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="tagSpacing" format="dimension" />
+        <!-- 是否是固定布局 -->
+        <attr name="isFixed" format="boolean" />
+        <attr name="columnSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="textViewDefaultColor" format="color"></attr>
+        <attr name="textViewFocusColor" format="color"></attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="WaterDropView">
+        <attr name="max_circle_radius" format="dimension"/>
+        <attr name="min_circle_radius" format="dimension"/>
+        <attr name="waterdrop_color" format="color"/>
+        <attr name="topcircle_x" format="dimension"/>
+        <attr name="topcircle_y" format="dimension"/>
+        <attr name="bottomcircle_x" format="dimension"/>
+        <attr name="bottomcircle_y" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable
+        name="roundedimageview">
+        <attr
+            name="border_thickness"
+            format="dimension"
+            />
+        <attr
+            name="border_inside_color"
+            format="color" />
+        <attr
+            name="border_outside_color"
+            format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialRangeSlider">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="unpressedTargetRadius" format="dimension" />
+        <attr name="pressedTargetRadius" format="dimension" />
+        <attr name="targetColor" format="color" />
+        <attr name="insideRangeLineColor" format="color" />
+        <attr name="outsideRangeLineColor" format="color" />
+        <attr name="insideRangeLineStrokeWidth" format="dimension" />
+        <attr name="isSingleCircle" format="boolean"/>
+        <attr name="outsideRangeLineStrokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageCoverFlowView">
+        <attr name="visibleImage" format="integer" />
+        <attr name="reflectionHeight" format="fraction" />
+        <attr name="reflectionGap" format="dimension" />
+        <attr name="topImageClickEnable" format="boolean" />
+        <attr name="coverflowGravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="center_vertical" value="2" />
+        </attr>
+        <attr name="coverflowLayoutMode" format="enum">
+            <enum name="match_parent" value="0"></enum>
+            <enum name="wrap_content" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+
+
+</resources>

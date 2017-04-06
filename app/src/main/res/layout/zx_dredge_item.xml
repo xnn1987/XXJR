@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_margin_20"
+        android:paddingRight="@dimen/common_margin_20">
+
+        <ImageView
+            android:id="@+id/zxDredge_iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_margin_20"
+            android:src="@mipmap/zhgl1" />
+
+        <TextView
+            android:id="@+id/zxDredge_tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/word_black_333333"
+            android:textSize="@dimen/world_14sp" />
+
+        <TextView
+            android:id="@+id/zxDredge_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zx_dredge_status01"
+            android:gravity="center"
+            android:text="获取征信报告"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/world_14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_gray" />
+
+</LinearLayout>

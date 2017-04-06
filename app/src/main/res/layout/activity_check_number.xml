@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="34dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/chahao"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+    <TextView
+        android:textColor="#9a9a9a"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="如果您事先没有为客户查号，"/>
+    <TextView
+        android:textColor="#9a9a9a"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:textSize="14sp"
+        android:text="为了防止撞单，建议您先查号再交单。"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+        <Button
+            android:textColor="#fc6923"
+            android:gravity="center"
+            android:id="@+id/CheckNumber_tv_checknumber"
+            android:layout_width="101dp"
+            android:layout_height="39dp"
+            android:textSize="15sp"
+            android:text="立刻查号"
+            android:background="@drawable/btn_shape_coners_lineorange"></Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="反馈描述"
+        android:textColor="#dedfe0"
+        android:textSize="15sp"
+        android:paddingLeft="11dp"
+        android:paddingTop="31dp"
+        android:paddingBottom="6dp"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:hint="请输入您的反馈意见"
+            android:textSize="14sp"
+            android:textColor="#9a9a9a"
+            android:gravity="top"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/shape_coners_line_black"
+            android:inputType="textMultiLine"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:background="@drawable/shape_coners_line_black"
+        android:layout_height="159dp"
+        android:orientation="vertical"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="47dp"
+                    android:src="@mipmap/jia" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="点击上传"
+                android:paddingTop="14dp"
+                android:textColor="#cfcfcf"
+                android:textSize="14sp"
+                />
+    </LinearLayout>
+    <Button
+        android:id="@+id/SalaryOrder_btn_Commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/btn_shape_coners_orange"
+        android:text="提交"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+   </LinearLayout>

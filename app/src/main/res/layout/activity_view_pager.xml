@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewpagerActivity_vp_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/ViewpagerActivity_ll_welcome"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/dot" />
+
+
+    </LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:background="@drawable/btn_shape_coners_line_transpan"
+        android:id="@+id/ViewpagerActivity_btn_welcome"
+        android:layout_width="133dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="立即体验"
+        android:textColor="@android:color/white"
+        android:layout_above="@id/ViewpagerActivity_ll_welcome"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

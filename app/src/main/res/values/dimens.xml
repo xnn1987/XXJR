@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="tag_corner_radius">8dip</dimen>
+    <dimen name="tag_horizontal_spacing">8.0dip</dimen>
+    <dimen name="tag_vertical_spacing">6.0dip</dimen>
+    <dimen name="common_margin">12.0dip</dimen>
+    <dimen name="common_margin_10">10.0dip</dimen>
+    <dimen name="common_margin_0.5">0.5dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="contactFm_lv_item_heigh">44dp</dimen>
+    <dimen name="contactFm_lv_item_menuwidth">90dp</dimen>
+    <dimen name="line_width">0.5dp</dimen>
+    <dimen name="row_width_60">60dp</dimen>
+    <dimen name="world_14sp">14sp</dimen>
+    <dimen name="world_13sp">13sp</dimen>
+    <dimen name="world_12sp">12sp</dimen>
+    <dimen name="button_Sp">16sp</dimen>
+    <dimen name="tv_bottomSp">16sp</dimen>
+    <dimen name="dialog_bottomSp">15sp</dimen>
+    <dimen name="statusBar_height">26dp</dimen>
+    <dimen name="common_margin_20">20dp</dimen>
+    <dimen name="title_sp">17sp</dimen>
+    <dimen name="title_height">38dp</dimen>
+</resources>

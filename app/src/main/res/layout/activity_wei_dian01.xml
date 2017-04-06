@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    
+    <include layout="@layout/title_only_backicon_title"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="46dp"
+        android:text="创建信贷微店，扩大获客渠道"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/word_black_333333"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" 
+        android:text="超过60%的信贷经理都创建了自己的微店"
+        android:textColor="@color/word_gray_a2a2a2"/>
+    
+    <LinearLayout
+        android:layout_marginTop="43dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="122dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/kuhushenqing"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word_gray_a2a2a2"
+                android:text="免费客户申请"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/zhuanyexingxiang"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word_gray_a2a2a2"
+                android:text="展现专业形象"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+    <LinearLayout
+        android:layout_marginBottom="51dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="122dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/hangyediwei"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word_gray_a2a2a2"
+                android:text="秀出行业地位"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/gengjiajishi"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word_gray_a2a2a2"
+                android:text="社交更加及时"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/weidian01_btn_toWD02"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="@dimen/button_Sp"
+        android:textColor="@android:color/white"
+        android:text="创建我的信贷微店"
+        android:background="@color/origin_qianse"/>
+
+</LinearLayout>

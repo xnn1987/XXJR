@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_shape_coners"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6dp"
+        android:text="您查询的客户信息已在本平台3个月内有过交单，您不能再做相关处理"
+        android:textColor="#737373"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <Button
+        android:id="@+id/CustominfoCheck_btn_know"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@null"
+        android:text="知道了"
+        android:textColor="#2589f7"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

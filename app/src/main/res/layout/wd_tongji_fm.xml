@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="279dp">
+
+        <!--<com.xxjr.xxjr.other.zhexiantu.AreaChart02View
+            android:id="@+id/tongji_Ac_chart"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="279dp" />-->
+
+        <com.xxjr.xxjr.other.lineChart.LineChartView
+            android:id="@+id/chart"
+            android:paddingRight="10dp"
+            android:paddingLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="279dp"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/tongji_iv_jilu"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jilu"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="82dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史申请"
+                android:textSize="13sp"
+                android:textColor="#bebebe"/>
+
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/weidian_tv_histroyshenqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/zhexiantu_line_green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#bebebe"
+                    android:textSize="13sp"
+                    android:text="人"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#dedfe0"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日申请"
+                android:textSize="13sp"
+                android:textColor="#bebebe"/>
+
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/weidian_tv_todayshenqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/zhexiantu_line_green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#bebebe"
+                    android:textSize="13sp"
+                    android:text="人"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/weidiantongji_btn_shared"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/origin_qianse"
+        android:text="分享微店"
+        android:textSize="@dimen/button_Sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="@dimen/common_margin_10"
+        android:layout_marginRight="@dimen/common_margin_10"/>
+
+
+
+</LinearLayout>

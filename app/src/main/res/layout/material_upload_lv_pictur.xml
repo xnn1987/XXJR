@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/MaterialUpload_tv_uploadDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="材料"
+            android:textColor="#cfcfcf" />
+        <TextView
+            android:id="@+id/MaterialUpload_tv_maxCount"
+            android:layout_toRightOf="@id/MaterialUpload_tv_uploadDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#cfcfcf" />
+        <TextView
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/MaterialUpload_tv_addmore"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_height="wrap_content"
+            android:text="点击添加图片"
+            android:textColor="#fc6923" />
+
+
+
+    </RelativeLayout>
+
+    <com.duoduo.wqg.smallfinicial.custview.CustListview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:clickable="false"
+        android:id="@+id/MaterialUpload_lv_item"/>
+
+<!--
+    <com.duoduo.wqg.smallfinicial.custview.CustListview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:clickable="false"
+        android:id="@+id/MaterialUpload_lv_item"/>
+-->
+
+    <!--<LinearLayout
+        android:id="@+id/MaterialUpload_ll_uploadONE"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_shape_coners"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/MaterialUpload_iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dianji" />
+    </LinearLayout>-->
+
+</LinearLayout>

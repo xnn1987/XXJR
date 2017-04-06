@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/layout_shape_white"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/yixiang01_iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/chanpin1" />
+
+        <TextView
+            android:layout_below="@id/yixiang01_iv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="12dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="首先您在微店添加微店产品，客户将在线向您申请，成为您的意向客户"
+            android:textColor="@color/word_gray_9a9a9a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/dialog_wdyx_tv_known"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tv_shape_coners_fill_70white"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="知道了"
+            android:textColor="@color/word_blue_5db0eb"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

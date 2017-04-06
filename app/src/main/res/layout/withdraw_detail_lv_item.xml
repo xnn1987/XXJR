@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingLeft="11dp"
+        android:id="@+id/WithdrawDetail_ll_withdraw">
+
+        <LinearLayout
+            android:id="@+id/WithdrawDetail_ll_01"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现至XX银行"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:id="@+id/WithdrawDetailItem_tv_bank" />
+
+
+            <TextView
+                android:paddingTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-12-30 11:32:01"
+                android:textColor="#9a9a9a"
+                android:textSize="12sp"
+                android:id="@+id/WithdrawDetailItem_tv_time" />
+
+
+        </LinearLayout>
+
+    <!--    <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:orientation="vertical">
+-->
+
+            <TextView
+                android:layout_marginRight="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/WithdrawDetail_ll_01"
+                android:id="@+id/WithdrawDetailItem_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00元"
+                android:textColor="#9a9a9a"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_alignRight="@id/WithdrawDetailItem_tv_money"
+                android:layout_alignBottom="@id/WithdrawDetail_ll_01"
+                android:layout_below="@id/WithdrawDetailItem_tv_money"
+                android:paddingTop="8dp"
+                android:id="@+id/WithdrawDetailItem_tv_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审核中"
+                android:textSize="12sp"
+                android:textColor="#9a9a9a" />
+
+
+       <!-- </RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="11dp"
+        android:background="#dedfe0" />
+</LinearLayout>

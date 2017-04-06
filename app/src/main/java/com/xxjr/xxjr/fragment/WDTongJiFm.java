@@ -1,0 +1,181 @@
+package com.xxjr.xxjr.fragment;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.xxjr.xxjr.R;
+import com.xxjr.xxjr.adapter.WDBerstSellerFmAdapter;
+import com.xxjr.xxjr.other.lineChart.Axis;
+import com.xxjr.xxjr.other.lineChart.ChartUtils;
+import com.xxjr.xxjr.other.lineChart.Line;
+import com.xxjr.xxjr.other.lineChart.LineChartData;
+import com.xxjr.xxjr.other.lineChart.LineChartView;
+import com.xxjr.xxjr.other.lineChart.PointValue;
+import com.xxjr.xxjr.other.lineChart.ValueShape;
+import com.xxjr.xxjr.other.lineChart.Viewport;
+import com.xxjr.xxjr.other.lineChart.ZoomType;
+import com.xxjr.xxjr.other.zhexiantu.AreaChart02View;
+import com.xxjr.xxjr.utils.Shared.Shared;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Administrator on 2016/4/8.
+ */
+public class WDTongJiFm extends Fragment {
+//    private AreaChart02View mAreaChar;
+    private TextView mTvHistroyCount;
+    private TextView mTvTodayCount;
+    private ImageView mIvJiLu;
+    private List<Float> monthList;
+    private String dayCount;
+    private String historyCount;
+    private LineChartView chart;
+    private LineChartData data;
+    private int numberOfLines = 1;
+    private int maxNumberOfLines = 4;
+    private int numberOfPoints = 31;
+    private ValueShape shape = ValueShape.CIRCLE;
+    private boolean isFilled = true;
+    private boolean hasLabels = false;//  便签数据
+    private boolean isCubic = true;  //  曲线还是折现
+    private boolean hasLabelForSelected = false;
+    private boolean pointsHaveDifferentColor;
+    private boolean hasAxes = true;
+    private boolean hasData = true;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle bundle = getArguments();
+        historyCount = bundle.getString("historyCount");
+        dayCount = bundle.getString("dayCount");
+        monthList = (List<Float>) bundle.getSerializable("monthList");
+
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.wd_tongji_fm, null);
+        initViews(view);
+
+        if (monthList!=null) {
+            hasData = true;
+        }else {
+            monthList = new ArrayList<>();
+            hasData = false;
+        }
+        hasDatas();
+        generateData();
+        // Disable viewport recalculations, see toggleCubic() method for more info.
+        chart.setViewportCalculationEnabled(false);
+        resetViewport();
+        tongJiShared(view);
+        return view;
+    }
+
+    private void hasDatas(){
+        if (hasData){
+            mIvJiLu.setVisibility(View.GONE);
+//            chart.setVisibility(View.VISIBLE);
+        }else {
+            mIvJiLu.setVisibility(View.VISIBLE);
+//            chart.setVisibility(View.GONE);
+        }
+
+    }
+
+
+
+
+    private void initViews(View view) {
+//        mAreaChar = (AreaChart02View) view.findViewById(R.id.tongji_Ac_chart);
+        mTvHistroyCount = (TextView) view.findViewById(R.id.weidian_tv_histroyshenqing);
+        mTvTodayCount = (TextView) view.findViewById(R.id.weidian_tv_todayshenqing);
+        mIvJiLu = (ImageView) view.findViewById(R.id.tongji_iv_jilu);
+        mTvHistroyCount.setText(historyCount);
+        mTvTodayCount.setText(dayCount);
+
+        chart = (LineChartView) view.findViewById(R.id.chart);
+        chart.setZoomType(ZoomType.HORIZONTAL);
+    }
+
+
+
+    private void generateData() {
+
+        List<Line> lines = new ArrayList<Line>();
+        for (int i = 0; i < numberOfLines; ++i) {
+
+            List<PointValue> values = new ArrayList<PointValue>();
+            for (int j = 0; j < monthList.size()  ; ++j) {
+                float data = Float.parseFloat(monthList.get(j)+"");
+                values.add(new PointValue( j,data));
+            }
+
+            Line line = new Line(values);
+            line.setColor(ChartUtils.COLORS[i]);
+            line.setShape(shape);
+            line.setCubic(isCubic);
+            line.setFilled(isFilled);//  是否填充
+            line.setHasLabels(hasLabels);
+            line.setHasLabelsOnlyForSelected(hasLabelForSelected);
+            line.setHasPoints(false);
+            line.setStrokeWidth(1);
+            line.setColor(Color.parseColor("#2ec7c9"));
+            line.setPointColor(Color.parseColor("#93dfe0"));
+            if (pointsHaveDifferentColor){
+                line.setPointColor(ChartUtils.COLORS[(i + 1) % ChartUtils.COLORS.length]);
+            }
+            lines.add(line);
+        }
+
+        data = new LineChartData(lines);
+
+        if (hasAxes) {
+            Axis axisX =  Axis.generateAxisFromRange(0,30,5);
+            axisX.setAutoGenerated(false);
+            Axis axisY = new Axis().setHasLines(false);
+            data.setAxisXBottom(axisX);
+            data.setAxisYLeft(axisY);
+        } else {
+            data.setAxisXBottom(null);
+            data.setAxisYLeft(null);
+        }
+
+        data.setBaseValue(Float.NEGATIVE_INFINITY);
+        chart.setLineChartData(data);
+
+    }
+
+
+    private void resetViewport() {
+        // Reset viewport height range to (0,100)
+        final Viewport v = new Viewport(chart.getMaximumViewport());
+        v.bottom = 0;
+        v.top = 100;
+        v.left = 0;
+        v.right = numberOfPoints - 1;
+        chart.setMaximumViewport(v);
+        chart.setCurrentViewport(v);
+    }
+
+    //  分享微店
+    public void tongJiShared(View view){
+        view.findViewById(R.id.weidiantongji_btn_shared).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Shared.sharedWeiDian(getActivity());
+            }
+        });
+
+    }
+}

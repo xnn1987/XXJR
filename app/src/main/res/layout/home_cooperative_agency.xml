@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeFM_ll_cooperative_agency"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:background="@drawable/click_white_selector"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <ImageView
+            android:id="@+id/home_iv_zuire"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zuire" />
+
+        <TextView
+            android:layout_toRightOf="@id/home_iv_zuire"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="金融咨询"
+            android:textColor="#fc6923"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/cooperative_iv_come"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_arrow"/>
+
+        <TextView
+            android:layout_marginRight="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/cooperative_iv_come"
+            android:textColor="#9a9a9a"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+
+</LinearLayout>

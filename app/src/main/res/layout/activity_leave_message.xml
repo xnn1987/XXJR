@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_three_view_titlebar"/>
+
+
+    <EditText
+        android:paddingTop="14dp"
+        android:id="@+id/LeaveMessage_et_message"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:hint="写下您在交单过程中遇到的疑问，我们会尽快给您回复！（不超过1000字符）"
+        android:lineSpacingExtra="6dp"
+        android:layout_width="match_parent"
+        android:textColorHint="#cfcfcf"
+        android:textSize="14sp"
+        android:textColor="#9a9a9a"
+        android:layout_height="176dp" />
+</LinearLayout>

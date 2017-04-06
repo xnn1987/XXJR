@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/qiandanbeij">
+
+    <ImageView
+        android:onClick="onClickBack"
+        android:id="@+id/signRob_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/fanhui_sign" />
+
+    <ImageView
+        android:id="@+id/signRob_iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/qiandao" />
+
+    <LinearLayout
+        android:id="@+id/signrob_ll_jifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signRob_iv_title"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用积分："
+            android:textColor="#f7f3f3"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/signRob_tv_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="#f6a00e"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:onClick="onClickIntegral"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_rob_check_det_shape"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详情"
+                android:textColor="#95cafc"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signRob_tv_jinbi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signrob_ll_jifen"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/jinbi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已经连续签到"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/signRob_tv_dayCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:text="0"
+            android:textColor="#f5532b"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signRob_tv_qiandao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signRob_tv_jinbi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@mipmap/lijiqiandao"
+        android:gravity="center"
+        android:onClick="onClickSign"
+        android:text="立即签到"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/signRob_iv_dizuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/dizuo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/baiyun" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <com.xxjr.xxjr.other.luckyPan.LuckyPanView
+            android:id="@+id/signRob_lp_pan"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:layout_centerInParent="true"
+            android:padding="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/signRob_iv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickChouJiang"
+                android:src="@mipmap/zhizhen" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<com.xxjr.xxjr.other.luckyPan.LuckyPanView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp"/>
+
+    <ImageView
+        android:id="@+id/signRob_iv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/start"
+        android:visibility="visible"/>-->
+
+
+</RelativeLayout>

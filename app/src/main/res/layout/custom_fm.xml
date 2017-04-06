@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_custom_fm"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/Custom_srl_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.xxjr.xxjr.other.swipemenulistview.SwipeMenuListView
+                    android:id="@+id/Custom_lv_commonfriend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbars="none" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <TextView
+                android:id="@+id/textView_dialog"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/voip_toast_bg"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <com.xxjr.xxjr.tongxun.SidebarView
+            android:id="@+id/sidebarView_main"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+

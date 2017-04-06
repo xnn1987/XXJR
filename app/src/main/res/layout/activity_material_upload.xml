@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    
+    <include layout="@layout/title_only_backicon_title"/>
+
+    <TextView
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提示：请上传申请客户的身份证正、反面照片"
+        android:textColor="#9a9a9a"
+        android:id="@+id/MaterialUpload_tv_prompt"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:divider="@null"
+        android:id="@+id/MaterialUpload_lv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<LinearLayout
+        android:id="@+id/MaterialUpload_ll_uploadONE"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="36dp"
+        android:layout_height="159dp"
+        android:gravity="center"
+        android:background="@drawable/layout_shape_coners">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dianji" />
+    </LinearLayout>-->
+
+    <!--<LinearLayout
+        android:id="@+id/MaterialUpload_ll_uploadTWO"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:gravity="center"
+        android:background="@drawable/layout_shape_coners">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dianji" />
+    </LinearLayout>-->
+
+</LinearLayout>

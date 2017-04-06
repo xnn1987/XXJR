@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#efefef"
+        android:orientation="vertical"
+        android:paddingLeft="11dp">
+
+        <TextView
+            android:id="@+id/ProdiceDetail_tv_CompanyProduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="某某公司-某某贷"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手续费："
+                android:textColor="#9a9a9a"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ProduceDetail_tv_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9a9a9a"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="月综合费："
+                android:textColor="#9a9a9a"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ProduceDetail_tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9a9a9a"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            >
+&lt;!&ndash;
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="放款成功率："
+                android:textSize="13sp"
+                android:textColor="#9a9a9a" />&ndash;&gt;
+
+            <TextView
+                android:id="@+id/ProduceDetail_tv_HitRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#fc6923" />
+
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f7f7f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="产品信息"
+            android:textColor="#328bef"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/ProduceDetail_tv_ProduceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#9a9a9a"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f7f7f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="11dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请条件"
+            android:textColor="#328bef"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ProduceDetail_tv_Apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#9a9a9a"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f7f7f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="11dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所需材料"
+            android:textColor="#328bef"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ProduceDetail_tv_Material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#9a9a9a"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

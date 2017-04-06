@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <com.xxjr.xxjr.other.FlowTagView.TagListView
+            xmlns:f="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/servehistoryCity_myTag"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16.0dip"
+            f:horizontalSpacing="10dp"
+            f:orientation="horizontal"
+            f:verticalSpacing="10dp" />
+
+
+
+
+
+</LinearLayout>

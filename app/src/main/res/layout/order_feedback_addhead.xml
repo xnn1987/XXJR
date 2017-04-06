@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/OrderFeedback_ll_produce"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#f7f7f7"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="申请产品："
+            android:textColor="#cfcfcf"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/OrderFeedback_tv_companyProduce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="恒昌财富产品"
+            android:textColor="#cfcfcf"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="订单反馈"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+</LinearLayout>

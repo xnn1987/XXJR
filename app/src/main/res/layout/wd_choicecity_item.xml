@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0" />
+
+    <TextView
+        android:id="@+id/choicecity_item_firstletter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="A"
+        android:textColor="#9a9a9a" />
+
+    <RelativeLayout
+        android:id="@+id/choicecity_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_white_selector">
+
+        <ImageView
+            android:id="@+id/choicecity_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/langou" />
+
+        <TextView
+            android:id="@+id/choicecity_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/choicecity_iv_icon"
+            android:gravity="center"
+            android:text="城市名"
+            android:textColor="@color/word_gray_9a9a9a"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

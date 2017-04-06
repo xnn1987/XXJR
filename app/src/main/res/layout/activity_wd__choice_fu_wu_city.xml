@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+        <include layout="@layout/title_three_view_titlebar" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_0.5"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/wdfuwucity_lv_commonfriend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/wdfuwucity_dialog"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/voip_toast_bg"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <com.xxjr.xxjr.tongxun.SidebarView
+            android:id="@+id/wdfuwucity_sidebarView"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

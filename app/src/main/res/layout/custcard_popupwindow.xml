@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="102dp"
+    android:background="#30000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/click_trasparent_selector"
+        android:id="@+id/custCardPupop_ll_alter"
+        android:gravity="center_vertical"
+        android:layout_width="152dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/xiugai_2x"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+
+    <LinearLayout
+        android:background="@drawable/click_trasparent_selector"
+        android:id="@+id/custCardPupop_ll_shared"
+        android:gravity="center_vertical"
+        android:layout_width="152dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/fenxiang_2x"/>
+
+        <TextView
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedfe0"/>
+
+    <!--<LinearLayout
+        android:id="@+id/custCardPupop_ll_erweima"
+        android:gravity="center_vertical"
+        android:layout_width="152dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/erweima_2x"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二维码"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>-->
+
+</LinearLayout>

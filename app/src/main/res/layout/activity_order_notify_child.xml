@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/orderNotifyChile_btn_fast1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/click_white_selector"
+            android:text="交单详情"
+            android:textColor="#fc6923"
+            android:textSize="@dimen/button_Sp" />
+
+
+        <com.xxjr.xxjr.custview.Pull2RefreshListView
+            android:divider="@null"
+            android:id="@+id/orderNotifyChile_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/orderNotifyChile_btn_fast1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/orderNotifyChile_btn_fast1"
+            android:background="#fc6923" />
+
+       <!-- <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/orderNotifyChile_btn_fast1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@mipmap/fankui" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>

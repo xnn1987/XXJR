@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/chat_picture_ohterhead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:src="@mipmap/kefutouxiang" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/chat_picture_ohterhead">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/chat_iv_other"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/chatto_bg_normal"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

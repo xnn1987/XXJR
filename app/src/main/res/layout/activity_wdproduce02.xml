@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_f7f7f7"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_only_backicon_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/wdproduce_tv_sharedwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/click_white_selector"
+            android:gravity="center"
+            android:onClick="onAddWdProduce"
+            android:text="添加产品"
+            android:clickable="true"
+            android:textColor="@color/origin_qianse"
+            android:textSize="@dimen/tv_bottomSp" />
+
+        <View
+            android:id="@+id/wdproduce_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/wdproduce_tv_sharedwd"
+            android:background="@color/origin_qianse"></View>
+
+        <com.xxjr.xxjr.custview.Pull2RefreshListView
+            android:id="@+id/wdproduce_lv_produce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/wdproduce_line"
+            android:divider="@null"
+            android:scrollbars="none"></com.xxjr.xxjr.custview.Pull2RefreshListView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/SumbitUserMateria_btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_shape_coners_orange"
+            android:text="提交审核"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/SumbitUserMateria_btn_Skin"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/btn_shape_coners_lineorange"
+            android:text="跳过"
+            android:textColor="#fc6923"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
